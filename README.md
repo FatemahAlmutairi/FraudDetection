@@ -2,7 +2,7 @@
 
 A machine learning-based fraud detection system for financial transactions. This project analyzes transaction patterns to identify potentially fraudulent activities using logistic regression with balanced class weights.
 
----
+
 
 ## Features
 
@@ -12,7 +12,7 @@ A machine learning-based fraud detection system for financial transactions. This
 * Feature Engineering: Custom features like balance differences to improve detection
 * Visualization: Data visualization using matplotlib and seaborn
 
----
+
 
 ## Run It
 
@@ -25,7 +25,7 @@ streamlit run fraud_detection.py
 **Run the Analysis Notebook**
 Open `analysis_model.ipynb` in Jupyter Lab or Jupyter Notebook to explore the data and model training process.
 
----
+
 
 ## Files
 
@@ -34,7 +34,7 @@ Open `analysis_model.ipynb` in Jupyter Lab or Jupyter Notebook to explore the da
 * `fraud_detection_pipline.pkl` - Trained machine learning model pipeline
 * `AIML Dataset.csv` - Transaction dataset (not included, needs to be added)
 
----
+
 
 ## Model Overview
 
@@ -50,7 +50,7 @@ The system uses a logistic regression classifier with the following features:
 * Recall (Fraud): 94% - Successfully identifies 94% of fraudulent transactions
 * Precision (Fraud): 2% - Due to extreme class imbalance (0.13% fraud rate)
 
----
+
 
 ## Data Processing
 
@@ -60,7 +60,7 @@ The pipeline includes:
 2. Preprocessing: Standard scaling for numerical features, one-hot encoding for categorical variables
 3. Class Balancing: Using `class_weight="balanced"` to handle imbalanced data
 
----
+
 
 ## Web Application Features
 
@@ -69,7 +69,7 @@ The pipeline includes:
 * Visual feedback with color-coded results (red for fraud, green for legitimate)
 * Support for all transaction types (PAYMENT, TRANSFER, CASH_OUT, DEPOSIT)
 
----
+
 
 ## Dataset Notes
 
@@ -79,7 +79,7 @@ The dataset contains approximately 6.36 million transactions with the following 
 * Fraud Types: Fraud only occurs in CASH_OUT and TRANSFER transactions
 * Features: Step (time), transaction type, amount, sender/receiver balances, fraud flags
 
----
+
 
 ## Requirements
 
@@ -92,7 +92,7 @@ The dataset contains approximately 6.36 million transactions with the following 
 * streamlit
 * joblib
 
----
+
 
 ## Notes
 
@@ -100,7 +100,7 @@ The dataset contains approximately 6.36 million transactions with the following 
 * This system focuses on catching as many fraudulent transactions as possible (recall) even at the cost of false positives
 * The web app uses the trained pipeline without requiring additional model training
 
----
+
 
 ## Built While Learning
 
